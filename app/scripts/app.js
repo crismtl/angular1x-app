@@ -1,13 +1,10 @@
 (function () {
   'use strict';
 
-  angular.module('blog', ['ngRoute', 'blog.controllers'])
+  angular.module('blog', ['ngRoute', 'blog.controllers']);
 
   function config($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+    $locationProvider.html5Mode(true);
     $routeProvider
       .when('/', {
         templateUrl: 'views/post-list.tpl.html',
