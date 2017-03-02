@@ -18,7 +18,7 @@
       .$promise.then(
         function (data) {
           self.post = data[0];
-          self.user = User.query({ id: self.user.userId });
+          self.user = User.query({ id: self.post.userId });
         },
         function (error) {
           console.log(error);
@@ -33,7 +33,7 @@
 
     this.create = function () {
       Post.save(self.post);
-    }
+    };
   }
 
   angular
