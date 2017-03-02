@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<ul class="blog-post-list">
+  <li class="blog-post-link" ng-repeat="post in postlist.posts">
+    <a ng-href="/post/{{post.id}}">{{post.title}}</a>
+  </li>
+</ul>
