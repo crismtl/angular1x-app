@@ -17,11 +17,12 @@
     </h3>
   </header>
   <ul class="comments-list">
-    <li class="comment-item" ng-repeat="comment in postdetail.comments"></li>
-    <span class="fa fa-user"></span>
-    <span class="comment-author">{{comment.email}}</span>
-    <p class="comment-body">
-      {{comment.body}}
-    </p>
+    <li class="comment-item" ng-repeat="comment in postdetail.comments">
+      <span class="fa fa-user"></span>
+      <span class="comment-author"></span>{{comment.email}}
+      <p class="comment-body">
+        {{comment.body}}
+      </p>
+    </li>
   </ul>
 </aside>
