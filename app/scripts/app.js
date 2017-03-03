@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('blog', ['ngRoute', 'blog.controllers']);
+  angular.module('blog', ['ngRoute', 'blog.controllers', 'blog.templates']);
 
   function config($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);
